@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Slider">
+            <div class="slide active">
+                <h2>React js</h2>
+                <img src="React.png" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <h2>MongoDB</h2>
+                <img src="Mongo.webp" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <h2>Node js</h2>
+                <img src="Node.png" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <h2>Database</h2>
+                <img src="Database.webp" alt="Slide 4">
+            </div>
+            <div class="slide">
+                <h2>Next js</h2>
+                <img src="Next-js.png" alt="Slide 5">
+            </div>
+            <!-- Navigation -->
+            <a href="#" class="prev" onclick="changeSlides(-1)"><i class="fas fa-arrow-left"></i></a>
+            <a href="#" class="next" onclick="changeSlides(1)"><i class="fas fa-arrow-right"></i></a>
+
+            <!-- Bar Navigation -->
+            <div class="bar-container">
+                <div class="bar" onclick="showSlides(0)"></div>
+                <div class="bar" onclick="showSlides(1)"></div>
+                <div class="bar" onclick="showSlides(2)"></div>
+                <div class="bar" onclick="showSlides(3)"></div>
+                <div class="bar" onclick="showSlides(4)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
