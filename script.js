@@ -24,7 +24,8 @@ function changeSlides(direction) {
     // Wrap around if index exceeds the number of slides
     if (currentSlide >= slides.length) {
         currentSlide = 0; // Go back to the first slide
-    } else if (currentSlide < 0) {
+    } 
+    else if (currentSlide < 0) {
         currentSlide = slides.length - 1; // Go to the last slide
     }
 
